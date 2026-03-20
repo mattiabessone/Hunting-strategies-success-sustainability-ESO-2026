@@ -1,6 +1,6 @@
-## Hunting strategies, success and sustainability: A case study in a community forest on the edge of Salonga National Park, DRC
+# Hunting strategies, success and sustainability: A case study in a community forest on the edge of Salonga National Park, DRC
 
-# Abstract
+## Abstract
 1.	Traditional hunting, practiced for millennia in Central Africa, is central to of the way of life of local communities. However, increasing demand for wild meat has led to a transition to commercial hunting, raising concerns about the sustainability of this practice. 
 2.	This study, carried out over twelve months in six villages on the outskirts of Salonga National Park, Democratic Republic of the Congo, analyses hunting strategies and their impact on biodiversity. 
 3.	A total of 1,769 hunting trips were documented, resulting in the capture of 1,671 prey individuals belonging to 40 different taxa, for a total biomass of 9,691 kg.
