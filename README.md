@@ -10,7 +10,7 @@
 7.	Practical implication These results highlight the importance of putting in place appropriate policies and strategies for adaptive hunting management, incorporating quotas, seasonal closures and economic alternatives to reduce pressure on wildlife to ensure biodiversity conservation and the sustainability of local communities' livelihoods.
 
 ## 1.	Content
-This repository stores the data and code used for analysis and for creating figures.
+This repository stores the data and code used for data analysis and for creating teh figures shown in te manuscript.
 
 ## 2. How to use
 Open the script “Run_analyses.R” in R, making sure to 1) set up the correct working directory 2) replicate the same folder structure provided here. 
