@@ -15,11 +15,11 @@ This repository stores the data and code used for analysis and for creating figu
 ## 2. How to use
 Open the script “Run_analyses.R” in R, making sure to 1) set up the correct working directory 2) replicate the same folder structure provided here. 
 The script “Run_models.R” provides different pipelines:
-* 1. Process the data*
-* 2. Descriptive analysis and hunter's profiles*
-* 3. Offtake species composition and biomass*
-* 4. Biodiversity and sustainability indices*
-* 5. Hunting strategies*
-* 6. Factors promoting hunting success*
+* (1) Process the data *
+* (2) Descriptive analysis and hunter's profiles *
+* (3) Offtake species composition and biomass*
+* (4) Biodiversity and sustainability indices*
+* (5) Hunting strategies*
+* (6) Factors promoting hunting success*
 
 Pipeline 2-6 require first sourcing code for pipeline 1 (Data processing). When this step is done, each pipeline can be sourced independently.
