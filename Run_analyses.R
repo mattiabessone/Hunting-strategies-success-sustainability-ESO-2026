@@ -1,4 +1,4 @@
-##### Baraka, Bessone et al. (2026). Ecologial Solutions and Evidence####
+##### Ausse Baraka, Bessone et al. (2026). Ecological Solutions and Evidence ####
 # Load libraries
 library(RColorBrewer)
 library(stringr)
@@ -7,8 +7,8 @@ library(car)
 library(DHARMa)
 # Load data
 results<-read.csv("Data/results_all.csv")
-trips<-read.csv("Data/CPUE_sorties.csv")
 trips_all<-read.csv("Data/hunting__trips_data.csv")
+trips<-read.csv("Data/CPUE_sorties.csv") # Subset of trips all, with information about CPUE
 hunters<-read.csv("Data/hunters_data.csv")
 
 #### 1) Process data - recode categories of prey and strategy ####
@@ -28,3 +28,4 @@ source("Code/strategies.R")
 
 #### 6) Models ####
 source("Code/models.R")
+

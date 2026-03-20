@@ -90,4 +90,3 @@ chisq.test(as.numeric(composition_test$V2),p=as.numeric(composition_test$V3))
 shapiro.test(log(results$poids_kg)) # not normal
 shapiro.test(log(results$prix_vente_kg)) # not normal
 cor.test(results$poids_kg, results$prix_vente_kg,method="spearman",exact=FALSE)
-plot(results$poids_kg,results$prix_vente_kg,ylim=c(0,40000))

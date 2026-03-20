@@ -96,3 +96,9 @@ unique(trips1$strat_revised)
 trips1$strat_revised2<-ifelse(trips1$strategie_primaire=="arc&fleches",trips1$strat_revised,trips1$strategie_primaire)
 trips1$strat_revised2<-ifelse(trips1$strat_revised2=="arc&fleches_collective_jour","arc&fleches_individuelle_nuit",trips1$strat_revised2)
 
+# create column wit 0 = day and 1 = night
+trips1$night_freq<-ifelse(trips1$periode_chasse=="nuit",1,0)
+# create column wit 0 = no bow and arrow and 1 = bow and arrow
+trips1$BandA_freq<-ifelse(trips1$strategie_primaire=="arc&fleches",1,0)
+# create column wit 0 = no snares and 1 = snares
+trips1$snares_freq<-ifelse(trips1$strategie_primaire=="pieges",1,0)

@@ -17,12 +17,18 @@ proportions(table(trips1$periode_chasse))
 table(trips1$periode_chasse,trips1$strategie_primaire)
 proportions(table(trips1$periode_chasse,trips1$strategie_primaire),margin=2)
 # Check if proportion of night hunting is higher during duiker nursing period (Jun-Oct)
-night_h<-subset(trips2,trips2$mois==1|trips2$mois==2|trips2$mois==3|trips2$mois==4|trips2$mois==5|trips2$mois==10|trips2$mois==11|trips2$mois==12)
-night_l<-subset(trips2,trips2$mois==6|trips2$mois==7|trips2$mois==8|trips2$mois==9|trips2$mois==10)
+night_h<-subset(trips1,trips1$mois==1|trips1$mois==2|trips1$mois==3|trips1$mois==4|trips1$mois==5|trips1$mois==10|trips1$mois==11|trips1$mois==12)
+night_l<-subset(trips1,trips1$mois==6|trips1$mois==7|trips1$mois==8|trips1$mois==9|trips1$mois==10)
 #binomial test to test if frequency of night hunting is higher during duiker lactating period
 binom.test(sum(night_l$night_freq),length(night_l$night_freq),mean(night_h$night_freq),alternative="greater")
-# during nursing season, night hunting proportion is higher
 
+# Now focus on strategies
+str_month<-aggregate(trips1$n,by=list(trips1$strategie_primaire,trips1$mois),sum,na.rm=TRUE,drop=FALSE)
+str_month[is.na(str_month)] <- 0
+t_mth<-as.vector(table(trips_all$mois))
+str_month$y<-rep(c("a","e","d","b","c"),12)
+Z<-c(rep(t_mth[1],5),rep(t_mth[2],5),rep(t_mth[3],5),rep(t_mth[4],5),rep(t_mth[5],5),rep(t_mth[6],5)
+     ,rep(t_mth[7],5),rep(t_mth[8],5),rep(t_mth[9],5),rep(t_mth[10],5),rep(t_mth[11],5),rep(t_mth[12],5))
 # Do the same with bow & arrow
 prop_BandA<-subset(str_month$x,str_month$Group.1=="arc&fleches")/unique(Z)
 shapiro.test(prop_BandA[6:10])
