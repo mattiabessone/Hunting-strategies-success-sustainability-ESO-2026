@@ -10,7 +10,7 @@
 7.	Practical implication These results highlight the importance of putting in place appropriate policies and strategies for adaptive hunting management, incorporating quotas, seasonal closures and economic alternatives to reduce pressure on wildlife to ensure biodiversity conservation and the sustainability of local communities' livelihoods.
 
 ## 1.	Content
-This repository stores the data and code used for data analysis and for creating the figures shown in te manuscript.
+This repository stores the data and code used for data analysis and for creating the figures shown in the manuscript: Ausse Baraka, J., Bessone, M., Baraka Lucungu, P., Admettons, Z., Beguide Bobo, D. N., Engombe Botomia, J., Miezi, E., Nkamisha Mukole, J., Nsilu, B., Semeki Ngabinzeke, J., & Fruth, B. (2026). Hunting strategies, success, and sustainability: A case study in a community forest on the edge of Salonga National Park, DRC. Ecological Solutions and Evidence, 7, e70241. https://doi.org/10.1002/2688-8319.70241.
 
 ## 2. How to use
 Open the script “Run_analyses.R” in R, making sure to 1) set up the correct working directory 2) replicate the same folder structure provided here. 
